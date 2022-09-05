@@ -1,8 +1,15 @@
-<button (click)="getComp(1)">1</button>
+<h1>aqui debajo esta el boton</h1>
+
+<button (click)="getCompetition(1)">1</button>
 <button>2</button>
 <button>3</button>
 <button>4</button>
 <button>5</button>
 <button>6</button>
 <button>7</button>
-<button>8</button>
+<button (click)="getTeam(0)">8</button>
+
+<div  *ngFor="let datos of latestFeedData.response | slice:0:10">
+
+    <h1>{{datos.title}}</h1>
+</div>
