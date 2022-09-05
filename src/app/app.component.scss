@@ -1,0 +1,13 @@
+.TopBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 46px;
+    transform: translateZ(0);
+    box-shadow: 0 1px 2px #01172d;
+    z-index: 50;
+    background: #01172d;
+    padding-left: 10px;
+    padding-right: 10px;
+}
