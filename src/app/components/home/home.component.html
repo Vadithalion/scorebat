@@ -8,8 +8,8 @@
 <button>6</button>
 <button>7</button>
 <button (click)="getTeam(0)">8</button>
-
-<div  *ngFor="let datos of latestFeedData.response | slice:0:10">
-
-    <h1>{{datos.title}}</h1>
+<div class="videocards">
+    <div  *ngFor="let datos of latestFeedData.response | slice:0:10" class="videocontent">
+        <app-videocard></app-videocard>
+    </div>
 </div>

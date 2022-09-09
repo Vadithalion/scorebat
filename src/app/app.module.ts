@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './commons/header/header.component';
 import { HomeComponent } from './components/home/home.component';
+import { VideocardComponent } from './commons/videocard/videocard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    VideocardComponent
   ],
   imports: [
     BrowserModule,
