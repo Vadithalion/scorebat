@@ -1,15 +1,3 @@
-<h1>aqui debajo esta el boton</h1>
+<h1 class="text-center">Selecciona partido</h1>
 
-<button (click)="getCompetition(1)">1</button>
-<button>2</button>
-<button>3</button>
-<button>4</button>
-<button>5</button>
-<button>6</button>
-<button>7</button>
-<button (click)="getTeam(0)">8</button>
-<div class="videocards">
-    <div  *ngFor="let datos of latestFeedData.response | slice:0:10" class="videocontent">
-        <app-videocard></app-videocard>
-    </div>
-</div>
+<app-videocard [latestFeedData]="latestFeedData"></app-videocard>

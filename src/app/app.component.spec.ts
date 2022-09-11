@@ -1,6 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './components/home/home.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -32,4 +33,10 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('.content span').textContent).toContain('tyrisapp app is running!');
   });
+  it ('El titulo es Prueba?', () => {
+    const fixture = TestBed.createComponent(HomeComponent);
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h1').textContent).toContain('aqui debajo esta el boton');
+  }); 
 });

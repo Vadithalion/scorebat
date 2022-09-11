@@ -1,8 +1,20 @@
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+<button *ngIf="player === true" type="button" class="btn btn-dark text-center" (click)="closePlayer()">Cerrar reproductor</button>
+<app-playermodal *ngIf="player === true"></app-playermodal>
+
+<div class="videocards">
+  <div *ngFor="let datos of latestFeedData.response | slice:0:10" class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{datos.thumbnail}} : assets/fail.jpg" alt="Card image cap">
+
+    <div class="card-body">
+      <h5 class="card-title">{{datos.title}}</h5>
+      <!-- <p class="card-text">{{datos.title}}</p> -->
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">{{datos.competition}}</li>
+      <li class="list-group-item">{{datos.date}}</li>
+    </ul>
+    <div class="card-body">
+      <a class="card-link" (click)="openPlayer()" (closePlayer)="closePlayer()">Ver partido</a>
+    </div>
   </div>
 </div>

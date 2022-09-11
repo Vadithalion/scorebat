@@ -1,5 +1,5 @@
 export class LastFeedModel {
-    response : [
+    response: {
         title: string,
         competition: string,
         matchviewUrl: string,
@@ -11,5 +11,5 @@ export class LastFeedModel {
             title: string,
             embed: string
         }
-    ]
+    }
 }

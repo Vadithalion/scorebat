@@ -18,11 +18,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.homeServicesService.getLastestFeed().subscribe((data: LastFeedModel) => {
       this.latestFeedData = data;
-    console.log('iñi latestFeedData', this.latestFeedData);
-
     });
-    console.log('iñi latestFeedData2', this.latestFeedData);
-
   }
 
   getCompetition(index: number) {
@@ -47,8 +43,6 @@ export class HomeComponent implements OnInit {
     this.homeServicesService.getCompetitionFeed(competition).subscribe((data: any) => {
       this.compData = data
     });
-    console.log('iñi compdata', this.compData);
-    console.log('iñi llamada ', this.homeServicesService.getCompetitionFeed);
   }
 
   getTeam(index: number) {
@@ -82,7 +76,6 @@ export class HomeComponent implements OnInit {
     this.homeServicesService.getCompetitionFeed(team).subscribe((data: any) => {
       this.teamData = data
     });
-    console.log('iñi teamdata', this.teamData);
   }
 
 }
