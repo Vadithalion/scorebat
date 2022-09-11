@@ -15,8 +15,8 @@ testing in process
 
 At this version, you can see the last matches:
 
-![](/tyrisapp/src/assets/readme/home.jpg)
+![](https://github.com/Vadithalion/scorebat/blob/master/src/assets/readme/home.jpg)
 
 and play highlights with a media player with full options:
 
-![](/tyrisapp/src/assets/readme/player.jpg)
+![](https://github.com/Vadithalion/scorebat/blob/master/src/assets/readme/player.jpg)
